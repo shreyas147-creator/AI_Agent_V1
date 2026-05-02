@@ -1,0 +1,28 @@
+# PrivateAI backend dependencies
+# Install: pip install -r requirements.txt
+
+# Web server
+fastapi==0.111.0
+uvicorn[standard]==0.29.0
+pydantic==2.7.1
+
+# HTTP client (for Ollama)
+requests==2.31.0
+
+# PDF extraction
+pymupdf==1.24.3         # fitz
+
+# Vector store
+faiss-cpu==1.8.0
+
+# Embeddings (local, ~90MB model download on first run)
+sentence-transformers==2.7.0
+
+# Scheduler (reminders)
+apscheduler==3.10.4
+
+# OS notifications (optional, graceful fallback if unavailable)
+plyer==2.1.0
+
+# Utilities
+python-multipart==0.0.9  # for future file upload endpoint
